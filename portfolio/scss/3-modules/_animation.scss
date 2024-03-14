@@ -1,0 +1,24 @@
+.hero-line1{
+  stroke-dasharray: 100 10;
+  animation: bg-hero-letter 4s linear 0s infinite alternate;
+}
+.hero-line2{
+  stroke-dasharray: 100 10;
+  animation: bg-hero-letter 4s linear 1s infinite alternate;
+}
+.hero-line3{
+  stroke-dasharray: 100 10;
+  animation: bg-hero-letter 4s linear 1.5s infinite alternate;
+}
+
+@keyframes bg-hero-letter {
+  0% {
+    stroke-dasharray: 200 100;
+    stroke-dashoffset: 0;
+  }
+  40%,
+  100% {
+    stroke-dasharray: 200 00;
+    stroke-dashoffset: 1000;
+  }
+}

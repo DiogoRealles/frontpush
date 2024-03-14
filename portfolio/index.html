@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="./css/style.min.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js" integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js" integrity="sha512-jNJOCd1PIjJoUa1XTDKaPdBLNUe4OJTrltKG+70O5ghYZ943nTRGIzjObwC2JtSm1fG7T06GbUApR2eirIU/jA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./js/script.js" defer></script>
+
+  <title>FrontWEEK - Portfólio</title>
+</head>
+<body>
+  <header class="menu">
+    <div class="menu-left">
+      <a class="link menu-1" href="./">Home</a>
+      <a class="link menu-2" href="#about">About</a>
+    </div>
+
+    <div class="menu-logo">
+      <a href="./"><h5 class="menu-3">Diogo Realles</h5></a>
+    </div>
+
+    <div class="menu-right">
+      <a class="link menu-4" href="#works">Works</a>
+      <a class="link menu-5" href="#contact">Get in touch</a>
+    </div>
+  </header>
+
+  <div class="relative">
+    <div class="bg-hero">
+      <svg class="svg-hero" viewBox="0 0 2500 1440" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g id="bg-hero" clip-path="url(#clip0_602_232)">
+        <g class="smoke-2" id="smoke-2" filter="url(#filter0_f_602_232)">
+        <path d="M884.59 880.145C680.582 667.988 471.719 462.47 280.202 631.141C67.0355 818.877 447.327 1199.68 733.673 1199.68C1056.76 1239.98 1764.88 901.376 1636.65 847.041C1508.43 792.706 1088.6 1092.3 884.59 880.145Z" fill="#15AED4" fill-opacity="0.05"/>
+        </g>
+        <g class="smoke-1" id="smoke-1" filter="url(#filter1_f_602_232)">
+        <path d="M1699.13 574.541C1891.9 775.321 2089.26 969.817 2270.22 810.192C2471.65 632.523 2112.31 272.144 1841.74 272.144C1536.45 234.004 867.34 554.449 988.501 605.87C1109.66 657.291 1506.36 373.76 1699.13 574.541Z" fill="#15AED4" fill-opacity="0.05"/>
+        </g>
+        <path class="hero-line3" id="hero-line3" d="M2632.66 406.767C2415.73 550.105 1944.5 939.177 1158.56 714.556C372.614 489.935 68.8498 847.756 -64.3557 975.469" stroke="#15AED4" stroke-width="1.5"/>
+        <path class="hero-line2" id="hero-line2" d="M-22.4408 675.087C215.508 595.109 938.275 464.525 1433.18 772.152C1928.09 1079.78 2487.64 660.892 2642.63 562.875" stroke="#15AED4" stroke-width="1.5"/>
+        <path class="hero-line1" id="hero-line1" d="M-113 264.357C150.004 248.688 760.674 147.342 1336.6 734.916C1912.52 1322.49 2360.39 1164.47 2542 1120.46" stroke="#15AED4" stroke-width="1.5"/>
+        </g>
+        <defs>
+        <filter id="filter0_f_602_232" x="18" y="369" width="1834" height="1034" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+        <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_602_232"/>
+        </filter>
+        <filter id="filter1_f_602_232" x="774" y="69" width="1755" height="1000" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+        <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_602_232"/>
+        </filter>
+        <clipPath id="clip0_602_232">
+        <rect width="2500" height="1440" fill="white"/>
+        </clipPath>
+        </defs>
+      </svg>        
+    </div>
+  </div>
+
+  <section id="about" class="container hero flex-center">
+    <div class="container-item">
+      <div>
+        <h1>Diogo Realles</h1>
+      </div>
+
+      <div>
+        <h2 class="mask text-right">Front-end Developer</h2>
+      </div>
+
+      <div>
+        <h2 class="mask">UI Designer</h2>
+      </div>
+      
+      <div class="flex-end pr-128">
+        <a href="#works" class="square">Works</a>
+      </div>
+    </div>
+
+    <div class="container-item">
+      <img class="img-photo" src="./img/hero.png" alt="Illustra" />
+    </div>
+  </section>
+  
+  <section id="works" class="list">
+    <div class="header-section list-item">
+      <h2>Selected Works</h2>
+    </div>
+
+    <div class="list-item">
+      <h5 class="list-item__number">01.</h5>
+      <a class="list-item__link" href="https://www.figma.com/proto/ZHMRC8qfzgi2OZhrn3MHCE/WeekBOOST?node-id=2%3A7&scaling=scale-down-width&page-id=0%3A1&hide-ui=1" target="_blank"><h3 class="list-item__title">WeekBOOST</h3></a>
+      <img class="img-project" src="./img/01.png" alt="Illustra" />
+    </div>
+
+    <div class="list-item">
+      <h5 class="list-item__number">02.</h5>
+      <a class="list-item__link" href="#" target="_blank"><h3 class="list-item__title">Cards</h3></a>
+      <img class="img-project" src="./img/02.png" alt="Illustra" />
+    </div>
+
+    <div class="list-item">
+      <h5 class="list-item__number">03.</h5>
+      <a class="list-item__link" href="https://gmmti.com.br/" target="_blank"><h3 class="list-item__title">GMM TI</h3></a>
+      <img class="img-project" src="./img/03.png" alt="Illustra" />
+    </div>
+  </section>
+
+  <section id="contact" class="container contact">
+    <h2>Get in touch</h2>
+    <h3 class="mask text-center">diogorealles@hotmail.com</h3>
+  </section>
+</body>
+</html>

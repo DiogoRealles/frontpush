@@ -1,0 +1,30 @@
+@use './typography';
+@use './colors';
+
+:root{
+  font-size: 62.5%;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body{
+  scroll-behavior: smooth;
+  font-family: typography.$font-title;
+  font-size: 1rem;
+}
+body{
+  background: colors.$black-dark;
+}
+ul, li{
+  list-style: none;
+}
+button{
+  border: 0;
+  background: transparent;
+  color: colors.$white-normal;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}

@@ -1,0 +1,125 @@
+@use './colors';
+
+$font-title: 'Barlow Condensed', sans-serif;
+
+h1{
+  font-family: $font-title;
+  font-size: 9.6rem;
+  line-height: 100%;
+  font-weight: 300;
+  color: colors.$white-normal;
+  @media screen and (max-width: 960px) {
+    font-size: 6.4rem;
+  }
+}
+h2{
+  font-family: $font-title;
+  font-size: 7.2rem;
+  line-height: 110%;
+  font-weight: 300;
+  color: colors.$white-normal;
+  @media screen and (max-width: 960px) {
+    font-size: 4.8rem;
+  }
+}
+h3{
+  font-family: $font-title;
+  font-size: 4.8rem;
+  line-height: 115%;
+  font-weight: 300;
+  color: colors.$white-normal;
+}
+h4{
+  font-family: $font-title;
+  font-size: 3.2rem;
+  line-height: 120%;
+  font-weight: 300;
+  color: colors.$white-normal;
+}
+h5{
+  font-family: $font-title;
+  font-size: 2.4rem;
+  line-height: 140%;
+  font-weight: 300;
+  color: colors.$white-normal;
+}
+h6{
+  font-family: $font-title;
+  font-size: 1.8rem;
+  line-height: 150%;
+  font-weight: 300;
+  color: colors.$white-normal;
+}
+p,
+a{
+  font-family: $font-title;
+  font-size: 2.4rem;
+  line-height: 150%;
+  font-weight: 300;
+  color: colors.$white-normal;
+  text-decoration: none;
+  color: colors.$white-normal;
+  transition: all .3s ease-in-out;
+}
+.link{
+  padding: .8rem 2.4rem;
+  position: relative;
+  display: inline-block;
+  &::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 20px;
+    width: 0%;
+    height: .2rem;
+    transform: translate3d(20%, -50%);
+    transition: all .3s ease-in-out;
+    background: colors.$white-normal;
+  }
+  &:hover{
+    opacity: .8;
+    &::after{
+      width: 70%;
+    }
+  }
+}
+.mask{
+  background: linear-gradient(-50deg, colors.$blue-light 0%, colors.$blue-dark 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text-center{
+  text-align: center;
+}
+.text-right{
+  text-align: right;
+}
+.square{
+  display: inline-block;
+  margin-top: 6.4rem;
+  font-size: 2.4rem;
+  padding: 1.6rem 2.4rem;
+  position: relative;
+  color: colors.$black-normal;
+  &::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 12rem;
+    height: 12rem;
+    transform: translate(-5%, -22%) rotate(45deg);
+    background: linear-gradient(225deg, colors.$blue-light 0%, colors.$blue-dark 100%);
+    border-radius: .4rem;
+    transition: all .4s ease-in-out;
+  }
+  &:hover{
+    &::after{
+      transform: translate(-5%, -22%) rotate(60deg);
+    }
+  }
+}
