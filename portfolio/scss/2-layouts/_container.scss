@@ -1,0 +1,22 @@
+.container{
+  width: min(90%, 1200px);
+  margin-inline: auto;
+  flex-wrap: wrap;
+  @media screen and (max-width: 960px) {
+    flex-direction: column;
+  }
+}
+.container-item:nth-child(1){
+  flex: 2 1 360px;
+  margin: 4rem 0;
+}
+.container-item:nth-child(2){
+  flex: 1 1 360px;
+  margin: 4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img{
+    max-width: 400px;
+  }
+}

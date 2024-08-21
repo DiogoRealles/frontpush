@@ -1,0 +1,19 @@
+.menu{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2.4rem 1.6rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: transparent;
+  z-index: 2;
+}
+@media screen and (max-width: 960px){
+  .menu-left{
+    display: none;
+  }
+  .menu-right{
+    display: none;
+  }
+}
